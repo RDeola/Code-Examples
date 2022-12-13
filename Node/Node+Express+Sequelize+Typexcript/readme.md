@@ -21,18 +21,22 @@ Instalando o Typescript em modo de desenvolvimento:
 npm install -D typescript @types/node ts-node-dev
 ```
 Vamos instalar também o Express e o `@types/express` para conseguirmos trabalhar com o Express no TypeScript:
-```
+```sh
 npm install express && npm install -D @types/express
 ```
 E por fim vamos instalar as dependências necessárias para usarmos o Sequelize:
-Copiar
+```sh
 npm install sequelize dotenv && npm install -D @types/sequelize mysql2 sequelize-cli
-Configuração do Typescript
+```
+
+## Configuração do Typescript
+
 Iniciar o Typescript
-Copiar
+```sh
  npx tsc --init
-Alterar as propriedade o arquivo tsconfig.json.
-Copiar
+ ```
+Alterar as propriedade o arquivo `tsconfig.json`.
+```sh
 {
   "compilerOptions": {
     // ...
@@ -43,9 +47,12 @@ Copiar
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build"]
 }
-Configuração do Sequelize
-Criar o arquivo de configuração na raiz do projeto .sequelizerc com o seguinte código:
-Copiar
+```
+
+## Configuração do Sequelize
+
+Criar o arquivo de configuração na raiz do projeto `.sequelizerc` com o seguinte código:
+```sh
 const path = require('path');
 
 module.exports = {
@@ -54,10 +61,15 @@ module.exports = {
   'seeders-path': path.resolve(__dirname,'src','database', 'seeders'),
   'migrations-path': path.resolve(__dirname,'src','database', 'migrations'),
 };
-Copiar
-- Iniciar o Sequelize `npx sequelize-cli init`.
-Criar o arquivo ./src/database/config/database.ts de conexão com o banco de dados e adicionar o código:
-Copiar
+```
+
+- Iniciar o Sequelize 
+```sh
+npx sequelize-cli init
+```
+
+Criar o arquivo `./src/database/config/database.ts` de conexão com o banco de dados e adicionar o código:
+```sh
 import 'dotenv/config';
 import { Options } from 'sequelize';
 
@@ -71,8 +83,10 @@ const config: Options = {
 }
 
 export = config;
-Adicionar um script no arquivo package.json, para podermos resetar o banco de dados por linha de comando:
-Copiar
+```
+
+Adicionar um script no arquivo `package.json`, para podermos resetar o banco de dados por linha de comando:
+```sh
 {
 // ...
 "scripts": {
@@ -81,10 +95,14 @@ Copiar
 }
 // ...
 }
-Instanciar o sequelize criando o arquivo ./src/database/models/index.ts com o seguinte código:
-Copiar
+```
+
+Instanciar o sequelize criando o arquivo `./src/database/models/index.ts` com o seguinte código:
+```sh
 import { Sequelize } from 'sequelize';
 import * as config from '../config/database';
 
 export default new Sequelize(config);
-Pronto, agora finalizamos a configuração de um projeto utilizando o Typescript em conjunto com o Sequelize. Lembre-se de que as migrations e seeds são no formato JS e as models são no formato de Classe com TS.
+```
+
+Pronto, agora finalizamos a configuração de um projeto utilizando o Typescript em conjunto com o Sequelize. Lembre-se de que as migrations e seeds são no formato `JS` e as models são no formato de Classe com `TS`.
