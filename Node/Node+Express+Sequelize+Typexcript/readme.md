@@ -10,17 +10,20 @@ Iniciar um projeto NodeJS com o comando:
  ```
 Iniciar git na pasta com o comando:
 ```sh
-  git init
-  ```
-Logo depois vamos adicionar o arquivo .gitignore na raiz do projeto.
+ git init
+ ```
+Logo depois vamos adicionar o arquivo `.gitignore` na raiz do projeto.
 
-Instalação das dependências
+## Instalação das dependências
+
 Instalando o Typescript em modo de desenvolvimento:
-Copiar
+```sh
 npm install -D typescript @types/node ts-node-dev
-Vamos instalar também o Express e o @types/express para conseguirmos trabalhar com o Express no TypeScript:
-Copiar
+```
+Vamos instalar também o Express e o `@types/express` para conseguirmos trabalhar com o Express no TypeScript:
+```
 npm install express && npm install -D @types/express
+```
 E por fim vamos instalar as dependências necessárias para usarmos o Sequelize:
 Copiar
 npm install sequelize dotenv && npm install -D @types/sequelize mysql2 sequelize-cli
