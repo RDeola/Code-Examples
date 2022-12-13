@@ -63,7 +63,7 @@ module.exports = {
 };
 ```
 
-- Iniciar o Sequelize 
+Iniciar o Sequelize 
 ```sh
 npx sequelize-cli init
 ```
