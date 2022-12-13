@@ -5,8 +5,10 @@ Uma aplicação Node com Express, utilizando o Typescript e o ORM Sequelize, exi
 ## Iniciar o projeto
 
 Iniciar um projeto NodeJS com o comando:
+```sh
 Copiar
  npm init -y
+ ```
 Iniciar git na pasta com o comando:
 Copiar
   git init
