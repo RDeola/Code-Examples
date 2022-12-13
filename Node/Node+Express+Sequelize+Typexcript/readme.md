@@ -2,7 +2,8 @@
 
 Uma aplicação Node com Express, utilizando o Typescript e o ORM Sequelize, exige uma série de configurações iniciais antes de realmente começarmos a implementar o nosso código. Para facilitar este processo, elaboramos um guia com o passo a passo a ser executado quando se inicia uma aplicação do zero.
 
-Iniciar o projeto
+## Iniciar o projeto
+
 Iniciar um projeto NodeJS com o comando:
 Copiar
  npm init -y
