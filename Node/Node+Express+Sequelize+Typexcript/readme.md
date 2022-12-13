@@ -6,12 +6,12 @@ Uma aplicação Node com Express, utilizando o Typescript e o ORM Sequelize, exi
 
 Iniciar um projeto NodeJS com o comando:
 ```sh
-Copiar
  npm init -y
  ```
 Iniciar git na pasta com o comando:
-Copiar
+```sh
   git init
+  ```
 Logo depois vamos adicionar o arquivo .gitignore na raiz do projeto.
 
 Instalação das dependências
