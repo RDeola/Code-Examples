@@ -8,3 +8,6 @@ import { connect } from 'mongoose'
 };
 
 connect('mongodb://localhost:27017/', options); // exemplo rodando localmente
+
+// ou, segundo a documentação, diretamente com o comando 
+// mongoose.connect('mongodb://username:password@host:port/database?options...');
