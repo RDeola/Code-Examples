@@ -11,3 +11,6 @@ Por exemplo, se você precisar definir um schema para uma coleção de animais d
 O Mongoose nos permite trabalhar com essas informações de forma muito ágil e simples. É exatamente para essas definições que os Schemas serão construídos. 
 
 Nessa pasta coloquei um exemplo: exemplo-schema.ts
+
+# Model 
+Irá prover todas as funções necessárias para acessar e manipular os dados (Documents) da nossa Collection.
