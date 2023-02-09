@@ -1,3 +1,8 @@
+# Connection
+Para facilitar a conexão, é possível manter todas informações necessárias para a conexão com o mongoDB em um arquivo, e utilizar essas informações com o método connection() quando necessário.
+
+Nessa pasta, coloquei um exemplo: connection.ts
+
 # Schema 
 Pode ser visto como um molde de uma coleção, e será responsável por descrever toda a estrutura dos dados. Portanto, precisamos de um molde para cada tipo de coleção que teremos em nossa base de dados.
 
