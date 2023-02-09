@@ -1,3 +1,4 @@
+// uma das maneiras de utilizar, pe criando um arquivo para usitlizarmos o método conect()
 import { connect } from 'mongoose'
 
   const options = {
