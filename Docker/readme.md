@@ -12,6 +12,8 @@ MacOs
 docker run --name my-mysql-container -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d -v ~/volumes/mysql:/var/lib/mysql --platform linux/x86_64 mysql:5.7
 ```
 
+
+
 - docker - comando base
   - run - para startar o container
   - --name nome_do_container - dando um nome para seu container
